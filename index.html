@@ -4,68 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>practice-03</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="">
-        <label for="first-name">First Name</label>
-        <input type="text" id="first-name" name="user-first-name">
-        <br><br>
+    <div class="form-area">
+        <form>
+            <div class="info">
+                <label for="first-name">First Name*</label>
+                <input type="text" id="first-name" name="user-first-name" required>
+                <br><br>
 
-        <label for="last-name">Last Name</label>
-        <input type="text" id="last-name" name="user-last-name">
-        <br><br>
+                <label for="last-name">Last Name*</label>
+                <input type="text" id="last-name" name="user-last-name" required>
+                <br><br>
 
-        <label for="number">Contact</label>
-        <input type="number" id="number" name="user-contact">
-        <br><br>
+                <label for="mail">Email*</label>
+                <input type="email" id="mail" name="user-email" required>
+                <br><br>
 
-        <label for="mail">Email</label>
-        <input type="email" id="mail" name="user-email">
-        <br><br>
+                <label for="password">Password*</label>
+                <input type="password" id="password" name="user-security" required>
+                <br><br>
 
-        <label for="password">Password</label>
-        <input type="password" id="password" name="user-security">
-        <br><br>
+                <label for="number">Contact</label>
+                <input type="number" id="number" name="user-contact">
+                <br><br>
 
-        <label for="region">Country</label>
-        <input type="text" id="region" name="user-region">
-        <br><br>
+                <label for="region">Country</label>
+                <input type="text" id="region" name="user-region">
+                <br><br>
 
-        <label for="city">City</label>
-        <input type="text" id="city" name="user-town">
-        <br><br>
+                <label for="city">City / Town</label>
+                <input type="text" id="city" name="user-town">
+                <br><br>
 
-        <label for="postcode">Postcode</label>
-        <input type="text" id="postcode" name="zipcode">
-        <br><br>
+                <label for="postcode">Postcode</label>
+                <input type="text" id="postcode" name="zipcode">
+                <br><br>
 
-        <label for="address">Address</label>
-        <input type="text" id="address" placeholder="Street Address" name="user-area">
-        <br><br>
+                <label for="address">Address*</label>
+                <input type="text" id="address" placeholder="Street Address" name="user-area" required>
+                <br><br>
+            </div>
+    
+            <label class="gender">Gender</label>&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            &nbsp;&nbsp;
+    
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+            &nbsp;&nbsp;
+    
+            <input type="radio" id="custom" name="gender">
+            <label for="custom">Custom</label>
+            <br><br><br>
+    
+            <input type="checkbox" name="" id="">
+            <span>Create an account?</span>
+            <br><br>
+            <span> *Create an account by entering the information below. If you are a returning customer please login at the top of the page</span><br><br><br>
 
-        <label>Gender</label>&nbsp;&nbsp;&nbsp;
-        <input type="radio" id="male" name="gender">
-        <label for="male">Male</label>
-        &nbsp;&nbsp;
-
-        <input type="radio" id="female" name="gender">
-        <label for="female">Female</label>
-        &nbsp;&nbsp;
-
-        <input type="radio" id="custom" name="gender">
-        <label for="custom">Custom</label>
-        <br><br><br>
-
-        <label for="notes">Order Notes</label>
-        <br>
-        <textarea name="message" id="notes" placeholder=""></textarea>
-        <br><br>
-
-        <input type="checkbox" name="" id="">
-        <label for="">Accept Terms and Conditions</label>
-        <br><br>
-
-        <input type="submit" value="Place Order">
-    </form>
+            <label for="notes"><em><strong>Order Notes:</strong></em></label>
+            <br>
+            <textarea name="message" id="notes" placeholder=""></textarea>
+            <br><br>
+    
+            <input type="checkbox" name="" id="">
+            <label for="">Accept Terms and Conditions</label>
+            <br><br>
+    
+            <input type="submit" value="Place Order">
+        </form>
+    </div>
 </body>
 </html>
