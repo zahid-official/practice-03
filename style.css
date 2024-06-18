@@ -22,7 +22,7 @@ body{
     clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
 }
 .text-gradient:hover{
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(to right, orange, red);
 }
@@ -69,7 +69,7 @@ button{
 }
 button span:hover{
     cursor: pointer;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(to right, orange, red);
 }
